@@ -10,6 +10,11 @@
 		119E14E11B425AA4007A5D48 /* PartialZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 119E14E01B425AA4007A5D48 /* PartialZip.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		119E14E71B425AA4007A5D48 /* PartialZip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119E14DB1B425AA4007A5D48 /* PartialZip.framework */; };
 		119E14EE1B425AA4007A5D48 /* PartialZipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E14ED1B425AA4007A5D48 /* PartialZipTests.m */; };
+		119E14F91B425AC0007A5D48 /* PZFileBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 119E14F71B425AC0007A5D48 /* PZFileBrowser.h */; };
+		119E14FA1B425AC0007A5D48 /* PZFileBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 119E14F81B425AC0007A5D48 /* PZFileBrowser.m */; };
+		119E14FC1B425ADC007A5D48 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 119E14FB1B425ADC007A5D48 /* libz.dylib */; };
+		119E14FF1B425C20007A5D48 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 119E14FE1B425C20007A5D48 /* LICENSE */; };
+		119E15011B425C30007A5D48 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 119E15001B425C30007A5D48 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		119E14E61B425AA4007A5D48 /* PartialZipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PartialZipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119E14EC1B425AA4007A5D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119E14ED1B425AA4007A5D48 /* PartialZipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartialZipTests.m; sourceTree = "<group>"; };
+		119E14F71B425AC0007A5D48 /* PZFileBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZFileBrowser.h; sourceTree = "<group>"; };
+		119E14F81B425AC0007A5D48 /* PZFileBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZFileBrowser.m; sourceTree = "<group>"; };
+		119E14FB1B425ADC007A5D48 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		119E14FE1B425C20007A5D48 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		119E15001B425C30007A5D48 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119E14FC1B425ADC007A5D48 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				119E14DD1B425AA4007A5D48 /* PartialZip */,
+				119E14FE1B425C20007A5D48 /* LICENSE */,
+				119E15001B425C30007A5D48 /* README.md */,
+				119E14FD1B425B01007A5D48 /* Frameworks */,
 				119E14EA1B425AA4007A5D48 /* PartialZipTests */,
 				119E14DC1B425AA4007A5D48 /* Products */,
 			);
@@ -72,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				119E14E01B425AA4007A5D48 /* PartialZip.h */,
+				119E14F71B425AC0007A5D48 /* PZFileBrowser.h */,
+				119E14F81B425AC0007A5D48 /* PZFileBrowser.m */,
 				119E14DE1B425AA4007A5D48 /* Supporting Files */,
 			);
 			path = PartialZip;
@@ -102,6 +118,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		119E14FD1B425B01007A5D48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				119E14FB1B425ADC007A5D48 /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -110,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				119E14E11B425AA4007A5D48 /* PartialZip.h in Headers */,
+				119E14F91B425AC0007A5D48 /* PZFileBrowser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119E14FF1B425C20007A5D48 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119E15011B425C30007A5D48 /* README.md in Sources */,
+				119E14FA1B425AC0007A5D48 /* PZFileBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +350,7 @@
 		119E14F21B425AA4007A5D48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -337,6 +366,7 @@
 		119E14F31B425AA4007A5D48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
